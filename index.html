@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+   
+    
+ 
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header><lord-icon
+            src="https://cdn.lordicon.com/mebvgwrs.json"
+            trigger="hover"
+            state="hover-wave"
+            colors="primary:#121331,secondary:#f9c9c0,tertiary:#66eece,quaternary:#000000,quinary:#ebe6ef"
+            style="width:50px;height:50px; vertical-align: middle;">
+        </lord-icon>
+    
+            <div class="logo"><a href="#">Bienvenidos</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                  
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="yo.jpeg" alt="">
+            </div>
+            <h1>Jonathan Quintana</h1>
+            <h2>Desarrollador web</h2>
+            <div class="redes">
+                <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2><lord-icon
+                src="https://cdn.lordicon.com/xahuqqcs.json"
+                trigger="loop"
+                stroke="light"
+                state="loop-rotate"
+                style="width:150px;height:150px; vertical-align: middle;">
+            </lord-icon>Sobre Mí</h2>
+            <p><span>Hola, soy Jonathan Quintana.</span> En mi trayecto como desarrollador web, he adquirido experiencia en una variedad de tecnologías, incluyendo HTML5, CSS, JavaScript , C++, React y Angular. Esto me ha permitido trabajar en proyectos diversos y desarrollar soluciones personalizadas para satisfacer las necesidades de mis clientes.
+
+                Además, mi amor por el diseño multimedia me ha llevado a explorar herramientas como After Effects, lo que me ha permitido combinar mis habilidades técnicas con la creatividad visual. Estoy convencido de que la sinergia entre la tecnología y el diseño es esencial para crear experiencias web memorables y atractivas.
+                
+                Una de las cosas que más disfruto en la vida es la oportunidad de compartir mi conocimiento y habilidades. Como profesor de idiomas modernos, me encanta ayudar a otros a aprender y crecer en sus capacidades lingüísticas. Esta pasión por la enseñanza se refleja en mi enfoque autodidacta, ya que siempre estoy buscando nuevas formas de aprender y mejorar.
+                
+                La autodidaxia es una de mis cualidades distintivas, y creo que el mundo de la tecnología y el diseño multimedia está en constante evolución. Estoy emocionado de estar en el centro de este cambio constante y desafiarme a mí mismo a aprender algo nuevo cada día.
+                
+                En resumen, soy alguien que valora el aprendizaje continuo, la creatividad y la capacidad de compartir conocimientos. Mi objetivo es seguir creciendo en mi carrera como desarrollador web, inspirando a otros a través de la enseñanza de idiomas modernos y creando experiencias en línea que destaquen.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            21-12-1987
+                        </li>
+                       
+                        <li>
+                            <strong>Email</strong>
+                            jonathanjqda@gmail.com
+                        </li>
+                        <!-- <li>
+                            <strong>Website</strong>
+                            www.jonajqda.com
+                        </li> -->
+                      
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCER</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Desarrollo web</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <!-- <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span> -->
+                        </div>
+                        <!-- <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span> -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <button id="descargarCV">
+                <lord-icon
+                    src="https://cdn.lordicon.com/orzbfnox.json"
+                    trigger="hover"
+                    style="width:100px;height:50px; vertical-align: middle">
+                </lord-icon> Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            <!-- <button onclick="enviarMensaje()">
+                <lord-icon src="https://cdn.lordicon.com/nqisoomz.json" trigger="loop" stroke="bold" state="loop-flying" colors="primary:#121331,secondary:#ebe6ef,tertiary:#30e8bd,quaternary:#3a3347" style="width:80px;height:80px; vertical-align: middle;"></lord-icon> Enviar Mensaje
+                <span class="overlay"></span>
+            </button> -->
+            
+        </div>
+        
+    </section>
+
+    <!-- SKILLS -->
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2><lord-icon
+                src="https://cdn.lordicon.com/kjtalhau.json"
+                trigger="hover"
+                stroke="bold"
+                style="width:250px;height:250px">
+            </lord-icon>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>75%</span>
+                            </div>
+                            
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="skill">
+        <span>After Effects</span>
+        <div class="barra-skill">
+            <div class="progreso aftereffects">
+                <span>85%</span>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <span>React</span>
+        <div class="barra-skill">
+            <div class="progreso ps">
+                <span>90%</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+         
+
+
+                <!-- Professional Skill -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+
+                
+
+    </div>
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+            </div>
+        </div>
+    </div>
+   
+        </div>
+    </div>
+</div>
+
+  
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2><lord-icon
+                src="https://cdn.lordicon.com/ujxzdfjx.json"
+                trigger="hover"
+                stroke="bold"
+                colors="primary:#242424,secondary:#ebe6ef"
+                style="width:150px;height:150px; vertical-align: middle;">
+            </lord-icon>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3><lord-icon
+                        src="https://cdn.lordicon.com/svsiboke.json"
+                        trigger="morph"
+                        state="morph-open"
+                        colors="primary:#121331,secondary:#ebe6ef,tertiary:#f24c00,quaternary:#e8e230,quinary:#f9c9c0,senary:#3a3347"
+                        style="width:150px;height:150px; vertical-align: middle;">
+                    </lord-icon>Educación</h3>
+                    <div class="item izq">
+                        <h4><br>Docencia en informática con especialidad en diseño multimedia</h4>
+                        <span class="casa">Instituto Universitario Pedagógico "Mons. Rafael Arias Blanco"</span>
+                        <span class="fecha">2006 - 2012</span>
+                        <p>Obtuve el título de Licenciado en Informática con especialidad en Diseño Multimedia en el IUPMA (Instituto Universitario Pedagógico Mons. Rafael Arias Blanco) en Caracas, Venezuela, lo que me brindó una experiencia apasionante y desafiante en el mejor sentido. Durante mi tiempo en la institución, adquirí conocimientos y habilidades que me han permitido explorar mi pasión por la creatividad y la tecnología en el mundo del diseño multimedia.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4><br>Planificación y Evaluación Formativa en Tecnologías de Información y Comunicación</h4>
+                        <span class="casa">Universidad Santa María</span>
+                        <span class="fecha">2012-2014</span>
+                        <p>En 2014, culminé exitosamente un postgrado en la prestigiosa Universidad Santa María, donde me especialicé en Planificación y Evaluación Formativa en Tecnologías de Información y Comunicación. Esta experiencia académica amplió y enriqueció mi formación, proporcionándome una comprensión profunda de cómo las tecnologías de la información y la comunicación pueden ser planificadas y evaluadas de manera efectiva en entornos educativos. Complementando mi sólida base en diseño multimedia obtenida en el IUPMA (Instituto Universitario Pedagógico Mons. Rafael Arias Blanco) en Caracas, Venezuela, esta especialización ha sido esencial en mi desarrollo educativo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                     <div class="item izq">
+                        <h4>Profesor de Idiomas Modernos</h4>
+                        <span class="casa">Instituto Pedagógico Libertador de Caracas</span>
+                        <span class="fecha">2015-2018</span>
+                        <p>En 2018, obtuve el título de  Técnico Superior en Idiomas Modernos con la especialidad de Inglés-Español como Lengua Extranjera del Instituto Pedagógico Libertador de Caracas. Esta experiencia educativa fue un punto culminante en mi desarrollo académico, ya que me sumergí en el apasionante mundo de la enseñanza de idiomas.
+
+                            Durante este período, aprendí a apreciar la importancia de la comunicación intercultural y la diversidad lingüística. La enseñanza de idiomas modernos no solo se trata de transmitir conocimientos, sino de promover el entendimiento cultural y fomentar la comunicación efectiva en un mundo globalizado. Esta especialización me enriqueció al brindarme las herramientas necesarias para facilitar la adquisición de habilidades lingüísticas en un contexto multicultural y diverso.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col derecha">
+                    <h3><lord-icon
+                        src="https://cdn.lordicon.com/nvrrlies.json"
+                        trigger="hover"
+                        style="width:150px;height:150px; vertical-align: middle;">
+                    </lord-icon>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Frontend Developer</h4>
+                        <span class="casa">Centro profesional Mara</span>
+                        <span class="fecha">2013-2015</span>
+                        <p>Durante mi tiempo en el Centro Profesional Mara, me desempeñé como profesor y desarrollador web, logrando avances significativos en mi aprendizaje personal y habilidades profesionales. Además, realicé mis primeras prácticas, aplicando y ampliando mis conocimientos en desarrollo web, lo que contribuyó tanto a mi crecimiento académico y técnico como a fortalecer mis habilidades pedagógicas. Esta experiencia integral en el Centro Profesional Mara fusionó la enseñanza, el desarrollo web y el crecimiento personal, brindándome una base sólida para el futuro.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Frontend Developer y diseñador multimedia</h4>
+                        <span class="casa">Peopleperhour</span>
+                        <span class="fecha">2014-2020</span>
+                        <p>PeoplePerHour, recibiendo más de 55 reseñas positivas de clientes en todo el mundo. Me especialicé en colaborar con escritores, motivadores y pequeños empresarios de Europa, Estados Unidos, Latinoamérica y Asia.Durante mi tiempo en PeoplePerHour, donde fui diseñador y desarrollador web, perfeccioné mis habilidades lingüísticas. Hablo fluidamente inglés, italiano, portugués y francés, además de tener suficiencia básica en alemán. Estas experiencias me permitieron trabajar y comunicarme eficazmente con clientes de diversas partes del mundo.</p>
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>
+            <lord-icon
+                src="https://cdn.lordicon.com/sourahfx.json"
+                trigger="hover"
+                stroke="bold"
+                colors="primary:#121331,secondary:#66eece,tertiary:#16c72e,quaternary:#e8e230"
+                style="width:150px;height:150px; vertical-align: middle;">
+            </lord-icon>
+            PORTFOLIO
+        </h2>
+        <div class="galeria">
+            <!-- Proyecto 1 -->
+            <div class="proyecto" onclick="redirigirAProyecto('https://jonajqda.github.io/landingpage.github.io/')">
+                <img src="proyecto1.png" alt="">
+                <div class="overlay">
+                    <h3>Landing Page</h3>
+                    <p>Café Artesanal</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <a href="https://jonajqda.github.io/galeria/" target="_blank"> 
+                    <img src="proyecto2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Proyecto 3 -->
+            <div class="proyecto" onclick="redirigirAForecast()">
+                <img src="proyecto3.png" alt="">
+                <div class="overlay">
+                    <h3>Forecast weather</h3>
+                    <p>API</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="proyecto" onclick="redirigirADiccionario()">
+                <img src="dictionary-1619740_1920.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Diccionario</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 5 -->
+            <div class="proyecto" onclick="redirigirALista()">
+                <img src="office-3199438_1280.jpg" alt="">
+                <div class="overlay">
+                    <h3>Lista de tareas</h3>
+                    <p>Organizar lista</p>
+                </div>
+            </div>
+            <!-- Agregado enlace al Proyecto 6 -->
+            <div class="proyecto">
+                <a href="https://jonajqda.github.io/appdeportiva.com/" target="_blank"> 
+                    <img src="n.jpg" alt="">
+                    <div class="overlay">
+                        <h3>App de Reserva</h3>
+                        <p>Descubre y reserva Actividades deportivas para tu Semana</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto proyecto-7" onclick="redirigirAVR()">
+                <a href="https://jonajqda.github.io/vr.github.io/#">
+                    <img src="image-deep-earth.jpg" alt="">
+                    <div class="overlay">
+                        <h3>VR studio</h3>
+                        <p>Proyecto 7</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Proyecto 7
+            <div class="proyecto">
+                <a href="https://jonajqda.github.io/vr.github.io/#" > 
+                <img src="image-deep-earth.jpg" alt="">
+                <div class="overlay">
+                    <h3>VR studio</h3>
+                    <p>Proyecto 7</p>
+                </div>
+            </div> -->
+            <!-- Proyecto 8 -->
+            <!-- <div class="proyecto">
+                <img src="proyecto3.png" alt="">
+                <div class="overlay">
+                    <h3>Proyecto 8</h3>
+                    <p>Descripción del Proyecto 8</p>
+                </div>
+            </div> -->
+            <!-- Proyecto 9
+            <div class="proyecto">
+                <img src="proyecto3.png" alt="">
+                <div class="overlay">
+                    <h3>Proyecto 9</h3>
+                    <p>Descripción del Proyecto 9</p>
+                </div>
+            </div>
+             Proyecto 10 -->
+            <!-- <div class="proyecto">
+                <img src="proyecto3.png" alt="">
+                <div class="overlay">
+                    <h3>Proyecto 10</h3>
+                    <p>Descripción del Proyecto 10</p>
+                </div>
+            </div> -->
+        </div> 
+        <section class="container">
+            <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="img/Ron H.jpg" alt="" class="image" />
+                        <p>
+                            He estado en el negocio durante más de 35 años,
+                             y la razón de mi éxito es que me preocupo por 
+                             mis clientes y siempre doy un 120%. Creo que las 
+                             personas merecen lo mejor de mí, ¡y eso es 
+                             exactamente lo que les brindo! ¡Y eso es
+                              exactamente lo que hace Jonathan! Se preocupa 
+                              lo suficiente como para asegurarse de que cada trabajo
+                               se realice a satisfacción de sus clientes, y esa es 
+                               una cualidad rara. Por esa razón, contraté a Jonathan
+                                 para trabajar en mi nuevo proyecto. 
+                             
+                        </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                          <span class="name">Ron H</span>
+                          <span class="job">Entrenador Personal/Conferencista Motivacional</span>
+                        </div>
+                      </div>
+                    <div class="slide swiper-slide">
+                        <img src="img/ailson.jpeg" alt="" class="image" />
+                        <p>
+                            Como siempre, es un auténtico placer colaborar con Jonathan. 
+                            Su dedicación y disposición para retroceder y esforzarse por 
+                            satisfacer al cliente son realmente excepcionales. La perseverancia 
+                            de Jonathan para superar expectativas y garantizar la plena 
+                            satisfacción del cliente es algo que nunca deja de impresionarme.  
+                             
+                        </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                          <span class="name">Ailson DM</span>
+                          <span class="job">Lecturer in Strategy and International Business</span>
+                        </div>
+                      </div>
+                      <div class="slide swiper-slide">
+                        <img src="img/Shabeeb L.jpg" alt="" class="image" />
+                        <p>
+                            Jonathan es un profesional asombroso... Muy innovador y extremadamente creativo... 100% recomendado. La calidad excepcional de su labor es evidencia de un enfoque innovador y creativo. Cada proyecto refleja su habilidad para pensar más allá de lo convencional y ofrecer soluciones únicas. 
+                             
+                        </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                          <span class="name">Shabeeb</span>
+                          <span class="job">Especialista en Redes (Tecnologías de la Información y Operacionales)</span>
+                        </div>
+                      </div>
+                      <div class="slide swiper-slide"> 
+                        <img src="img/Dan A..jpeg" alt="" class="image">
+                        <p>
+                            Extremadamente trabajador y con una producción realmente destacada, estoy encantado con los resultados sobresalientes entregados. Su dedicación y ética de trabajo incansable no solo han cumplido, sino que han superado mis expectativas. La calidad de su trabajo habla por sí misma acerca de su compromiso con la excelencia.  
+                        </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Dan Arafat </span>
+                            <span class="job">
+                                Creative Director 24 our games and club</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide"> 
+                        <img src="img/Ashley Knapman.png" alt="" class="image">
+                        <p>
+                            Las habilidades excepcionales de Jonathan en la creación de 
+                            plataformas de comercio electrónico realmente lo destacan en 
+                            la industria. Su destreza en el diseño y desarrollo de tiendas 
+                            en línea va más allá de la mera competencia técnica; refleja una 
+                            comprensión profunda del panorama del comercio electrónico. 
+                        </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Ashley K</span>
+                            <span class="job">Web Designer / Social Media Management</span>
+                        </div>
+                    </div>
+                    
+                    
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <script>
+        function redirigirADiccionario() {
+            window.location.href = 'https://jonajqda.github.io/dictionary.github.io/';
+        }
+    </script>
+</section>
+
+<br>
+
+    <section id="contacto" class="contacto">
+
+        <div class="contenido-seccion">
+            <h2><lord-icon
+                src="https://cdn.lordicon.com/tdtlrbly.json"
+                trigger="hover"
+                stroke="bold"
+                colors="primary:#121331,secondary:#30c9e8"
+                style="width:150px;height:150px; vertical-align: middle;">
+            </lord-icon>CONTACTO</h2>
+
+            <div class="fila">
+
+                <!-- formulario -->
+
+                 <!-- <div class="col"> -->
+                        <!-- <input type="text" placeholder="Tu Nombre">
+                        <input type="text" placeholder="Número telefónico">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema"> 
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>  -->
+
+                 
+                </div>
+
+          
+
+            <-- <div class="col">
+                    <br>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Oviedo, Asturias, España
+                            </li> 
+                            
+                            <li>
+    <i class="fa-solid fa-envelope"></i>
+    Email: jonathanjqda@gmail.com<br><br>
+    <i class="fa-solid fa-phone"></i>
+    Contacto: +34641606307
+</li>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+    </footer>
+    <script>
+        function redirigirAProyecto(url) {
+            window.location.href = url;
+        }
+    </script>
+    <script>
+        function redirigirAProyecto(url) {
+            window.location.href = url;
+        }
+    </script>
+    <script>
+        function redirigirAForecast() {
+          
+            window.location.href = 'https://jonajqda.github.io/forecast.github.io/';
+        }
+    </script>
+    <script>
+        function redirigirALista(){
+
+            window.location.href = 'https://jonajqda.github.io/listadetareas.github.io/';
+        }
+
+    </script>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+    <script src="swiper-bundle.js"></script>
+    </section>
+    <script>
+      
+        function descargarCV() {
+           
+            var url = 'jona.pdf';
+
+            
+            var link = document.createElement('a');
+            link.href = url;
+
+           
+            link.download = 'tu_cv.pdf';
+
+          
+            document.body.appendChild(link);
+            link.click();
+
+            
+            document.body.removeChild(link);
+        }
+
+        document.getElementById('descargarCV').addEventListener('click', descargarCV);
+    </script>
+    </body>
+</html> 
